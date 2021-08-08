@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up python ${{ matrix.python-version }} with numpy ${{ matrix.numpy-version}}
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
